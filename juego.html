@@ -1,0 +1,86 @@
+<!--
+
+  ____          _____               _ _           _       
+ |  _ \        |  __ \             (_) |         | |      
+ | |_) |_   _  | |__) |_ _ _ __ _____| |__  _   _| |_ ___ 
+ |  _ <| | | | |  ___/ _` | '__|_  / | '_ \| | | | __/ _ \
+ | |_) | |_| | | |  | (_| | |   / /| | |_) | |_| | ||  __/
+ |____/ \__, | |_|   \__,_|_|  /___|_|_.__/ \__, |\__\___|
+         __/ |                               __/ |        
+        |___/                               |___/         
+    
+____________________________________
+/ Si necesitas ayuda, contáctame en \
+\ https://parzibyte.me               /
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+Creado por Parzibyte (https://parzibyte.me). Este encabezado debe mantenerse intacto,
+excepto si este es un proyecto de un estudiante.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simon says</title>
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .boton {
+            cursor: pointer;
+        }
+
+        body {
+            padding-bottom: 70px;
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+    <a class="navbar-brand" target="_blank" href="index.html">Regresar a Inicio</a>
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i
+                        class="fa fa-hands-helping"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>Simon says</h1>
+        </div>
+        <div class="col-12 table-responsive">
+            <button id="comenzar" class="mb-2 btn btn-success">Comenzar juego</button>
+            <div id="contenedorJuego"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="px-2 py-2 fixed-bottom bg-dark">
+        <span class="text-muted">Simon says game
+            <a class="text-white" href="//parzibyte.me/blog">2021</a>
+            &nbsp;|&nbsp;
+            <a target="_blank" class="text-white" href="//github.com/parzibyte/simon-game-javascript">
+                UTPL
+            </a>
+        </span>
+</footer>
+
+<script src="js/game.js"></script>
+</body>
+</html>
